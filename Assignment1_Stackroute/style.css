@@ -111,46 +111,52 @@ ul#nav li a { color: #F06000; }
 	font-size: 50px;
 }
 
-.main {
-	padding: 16px;
-	margin-top: 30px;
-	height: 1500px;
-}
 .flex-container {
 	/*padding: 20px;
 	*/margin-top: 30px;
   display: flex;
-  background-color: DodgerBlue;
+  background-color: white;
+  flex-grow:1;
+  flex-shrink:1;
+  flex-wrap:wrap;
+  width: 100%;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
   display: flex;
-  flex-direction: row;
-  margin: 10px;
+  flex-direction: column;
+  margin: 20px;
   padding: 20px;
   font-size: 10px;
 }
+
 footer{
-	left: 0;
-	bottom: 0;
+	padding-top: 24px;
+	margin-bottom: 24px;
 	width: 100%;
 	background-color: #33a8ff;
 	color: white;
 	text-align: center;
+	height: 100px;
 }
-.social-links li{
-	display: inline;
+footer a, footer a:visited{
+	color: #525252;
 }
-.social-links a{
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	text-decoration-color: white;
-}
-.social-links a:hover{
+footer a:hover, footer a:focus{
+	color:#fff;
 	background-color: white;
-	color: black;
+}
+footer .social-links{
+	margin: 18px 0 30px 0;
+	padding: 0;
+	font-size: 30px;
+}
+footer .social-links li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-left: 42px;
 }
 footer i{
 	font-size: 48px;
