@@ -64,3 +64,28 @@ body, html{
   padding: 20px;
   font-size: 10px;
 }
+footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #33a8ff;
+	color: white;
+	text-align: center;
+}
+.social-links li{
+	display: inline;
+}
+.social-links a{
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-decoration-color: white;
+}
+.social-links a:hover{
+	background-color: white;
+	color: black;
+}
+footer i{
+	font-size: 48px;
+	color: black;
+}
