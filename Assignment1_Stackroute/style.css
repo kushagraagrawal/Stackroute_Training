@@ -114,21 +114,19 @@ ul#nav li a { color: #F06000; }
 .flex-container {
 	/*padding: 20px;
 	*/margin-top: 30px;
+
   display: flex;
-  background-color: white;
-  flex-grow:1;
-  flex-shrink:1;
-  flex-wrap:wrap;
+  background-color: black;
+  flex: wrap;
   width: 100%;
-}
+  flex-direction: row;
+ }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
   margin: 20px;
   padding: 20px;
-  font-size: 10px;
+  font-size: 30px;
 }
 
 footer{
