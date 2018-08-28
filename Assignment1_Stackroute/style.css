@@ -95,6 +95,7 @@ ul#nav li a { color: #F06000; }
 	height: 90%;
 	width: 100%;
 	margin: auto;
+	margin-top: 48px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -111,7 +112,11 @@ ul#nav li a { color: #F06000; }
 .hero-text h1{
 	font-size: 50px;
 }
-
+#about h2{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
 .flex-container {
 	/*padding: 20px;
 	*/margin-top: 30px;
@@ -152,25 +157,6 @@ footer{
 	color: white;
 	text-align: center;
 	height: 100px;
-}
-
-footer #go-top{
-	position: absolute;
-	top: 24px;
-	left: 50%;
-	margin: 18px 0 30px 0;
-}
-footer #go-top a{
-	text-decoration: none;
-	border: 0 none;
-	display: block;
-	width: 60px;
-	height: 60px;
-	background-color: #525252;
-	color: #fff;
-    font-size: 21px;
-    line-height: 60px;
-	border-radius: 100%;
 }
 
 footer a, footer a:visited{
