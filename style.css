@@ -157,3 +157,10 @@ footer i{
 	font-size: 48px;
 	color: black;
 }
+
+.social-links li caption{
+	display: none;
+	font-size: 1px;
+	margin-left: 100px;
+	margin: auto;
+}
