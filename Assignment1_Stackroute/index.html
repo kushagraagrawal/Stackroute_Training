@@ -6,7 +6,20 @@
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+				$(document).ready(function(){  
+					$(".smoothscroll").click(function(e) {
+						e.preventDefault();
+						$('html, body').animate({
+							scrollTop: $($.attr(this, 'href')).offset().top
+						}, 2000);
+					});
+				});
+	</script>
+	
 	<title>Assignment 1</title>
 </head>
 <body>
@@ -23,7 +36,9 @@
 
 		<ul id="nav" class="nav">
 			<li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-			<li><a class="smoothscroll" href="#about">About</a></li>
+			<li><a class="smoothscroll" href="#about">About</a>
+			
+			</li>
 			<li><a class="smoothscroll" href="#contact">Contact</a></li>
 		</ul> <!-- end #nav -->
 
@@ -71,6 +86,7 @@
 
 		</div>	
 	</footer>
+	
 
 </section>
 </body>

@@ -1,6 +1,7 @@
 body, html{
 	height: 100%;
 	font-family: 'Slabo 27px', serif;
+	margin: 0px;
 }
 /*
 .navbar{
@@ -158,6 +159,7 @@ footer a, footer a:visited{
 footer a:hover, footer a:focus{
 	color:#fff;
 	background-color: white;
+	padding: 5px;
 }
 footer .social-links{
 	margin: 18px 0 30px 0;
@@ -167,7 +169,7 @@ footer .social-links{
 footer .social-links li{
 	display: inline-block;
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	margin-left: 42px;
 }
 footer i{
