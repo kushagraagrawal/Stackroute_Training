@@ -3,29 +3,6 @@ body, html{
 	font-family: 'Slabo 27px', serif;
 	margin: 0px;
 }
-/*
-.navbar{
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-	top:0;
-	width: 100%;
-}
-
-.navbar a{
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-.navbar a:hover{
-	background: #ddd;
-	color: black;
-}
-*/
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -46,9 +23,6 @@ body, html{
    top: 0;
    background-color: black;
 }
-/*
-.opaque { background-color: #333; } 
-*/
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -78,13 +52,6 @@ ul#nav li a {
 	text-decoration: none;
    text-align: left;
    color: #fff;
-/*
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
-	*/
 }
 
 ul#nav li a:active { background-color: transparent !important; }
@@ -92,7 +59,7 @@ ul#nav li a { color: #F06000; }
 
 .hero-image{
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background.jpg");
-	height: 90%;
+	height: 85%;
 	width: 100%;
 	margin: auto;
 	margin-top: 48px;
@@ -113,7 +80,7 @@ ul#nav li a { color: #F06000; }
 	font-size: 50px;
 }
 #about h2{
-	font-size: 20px;
+	font-size: 30px;
 	color: black;
 	text-align: center;
 }
@@ -135,7 +102,8 @@ ul#nav li a { color: #F06000; }
   background-color: #f1f1f1;
   margin: 20px;
   padding: 20px;
-  font-size: 10px;
+  font-size: 20px;
+  min-width: 200px;
 }
 
 @media (max-width: 960px){
@@ -151,12 +119,13 @@ ul#nav li a { color: #F06000; }
 footer{
 	margin-top: 30px;
 	padding-top: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 30px;
+	padding-bottom: 24px;
 	width: 100%;
 	background-color: #33a8ff;
 	color: white;
 	text-align: center;
-	height: 100px;
+	height: 60%;
 }
 
 footer a, footer a:visited{
@@ -169,9 +138,14 @@ footer a:hover, footer a:focus{
 }
 
 footer .social-links{
-	margin: 18px 0 30px 0;
+	margin: 18px 5px 30px 0;
 	padding: 0;
 	font-size: 30px;
+}
+footer h2{
+	margin: 18px 0 30px 30px;
+	padding: 0;
+	font-size: 20px;	
 }
 footer .social-links li{
 	display: inline-block;
