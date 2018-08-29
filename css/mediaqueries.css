@@ -16,6 +16,11 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	.hero-image{
+		margin-top: 0;
+		margin: auto;
+	}
+	/*
 	#nav-wrap{
 		display: none;
 	}
@@ -84,39 +89,43 @@
 	{
 		transform-origin: 0% 100%;
 	}
-
+	*/
 	/* 
  	* Transform all the slices of hamburger
  	* into a crossmark.
  	*/
+ 	/*
  	#menuToggle input:checked ~ span
  	{
  		opacity: 1;
 	 	transform: rotate(45deg) translate(-2px, -1px);
 	 	background: #232323;
 	 }
-
+	*/
 	/*
 	 * But let's hide the middle one.
 	 */
+	/*
 	 #menuToggle input:checked ~ span:nth-last-child(3)
 	 {
 	 	 	opacity: 0;
  		transform: rotate(0deg) scale(0.2, 0.2);
  	}
-
+	*/
 	/*
 	 * Ohyeah and the last one should go the other direction
 	 */
+	/*
 	 #menuToggle input:checked ~ span:nth-last-child(2)
 	 {
 	 	transform: rotate(-45deg) translate(0, -1px);
 	 }
-
+	*/
 	/*
  	* Make this absolute positioned
  	* at the top left of the screen
  	*/
+ 	/*
  	#menu
  	{
  		position: absolute;
@@ -128,8 +137,7 @@
 	 	background: #ededed;
 	 	list-style-type: none;
 	 	-webkit-font-smoothing: antialiased;
-	 	/* to stop flickering of text in safari */
-
+	 
 	 	transform-origin: 0% 0%;
 		  transform: translate(-100%, 0);
 	  
@@ -141,12 +149,99 @@
 	  padding: 10px 0;
 	  font-size: 22px;
 	}
-
+	*/
 	/*
 	 * And let's slide it in from the left
 	 */
+	/*
 	#menuToggle input:checked ~ ul
 	{
 	  transform: none;
 	}
+	*/
+	 #nav-wrap {
+      font: 12px 'opensans-bold', sans-serif;
+      background: transparent !important;
+      letter-spacing: 1.5px;  
+      width: auto;
+      position: fixed;
+      top: 0;
+      right: 0;
+   }
+   #nav-wrap > a {
+	   width: 48px;
+		height: 48px;
+		text-align: left;
+		background-color: #CC5200;
+		position: relative;
+      border: none;
+      float: right;
+
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+
+      position: relative;
+      top: 0px;
+      right: 30px;
+   }
+
+	#nav-wrap > a:before,
+   #nav-wrap > a:after {
+	   position: absolute;
+		border: 2px solid #fff;
+		top: 35%;
+		left: 25%;
+		right: 25%;
+		content: '';
+	}
+   #nav-wrap > a:after { top: 60%; }
+
+   /* toggle buttons */
+	#nav-wrap:not( :target ) > a:first-of-type,
+	#nav-wrap:target > a:last-of-type  {
+	   display: block;
+	}
+
+   /* hide menu panel */
+   #nav-wrap ul#nav {
+      height: auto;
+		display: none;
+      clear: both;
+      width: auto; 
+      float: right;     
+
+      position: relative;
+      top: 12px;
+      right: 0;
+   }
+
+   /* display menu panels */
+	#nav-wrap:target > ul#nav	{
+	   display: block;
+      padding: 30px 20px 48px 20px;
+      background: #1f2024;
+      margin: 0 30px;
+      clear: both;
+   }
+
+   ul#nav li {
+      display: block;
+      height: auto;      
+      margin: 0 auto; 
+      padding: 0 4%;           
+      text-align: left;
+      border-bottom: 1px solid #2D2E34;
+      border-bottom-style: dotted; 
+   }
+  
+   ul#nav li a {  
+      display: block;    
+      margin: 0;
+      padding: 0;      
+      margin: 12px 0; 
+      line-height: 16px; /* reset line-height from 48px */
+      border: none;
+   }  
+
 }
