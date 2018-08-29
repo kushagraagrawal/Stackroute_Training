@@ -149,10 +149,10 @@ ul#nav li a { color: #F06000; }
 footer{
 	margin-top: 30px;
 	padding-top: 24px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	padding-bottom: 24px;
 	width: 100%;
-	background-color: #33a8ff;
+	background-color: black;
 	color: white;
 	text-align: center;
 	height: 60%;
@@ -162,9 +162,8 @@ footer a, footer a:visited{
 	color: #525252;
 }
 footer a:hover, footer a:focus{
-	color:#fff;
-	background-color: white;
-	padding: 5px;
+	background-color: transparent;
+	
 }
 
 footer .social-links{
@@ -188,9 +187,9 @@ footer i{
 	color: black;
 }
 
-.social-links li caption{
-	display: none;
-	font-size: 1px;
-	margin-left: 100px;
-	margin: auto;
+.social-links i{
+	color: white
+}
+.social-links i:hover{
+	color:red;
 }
