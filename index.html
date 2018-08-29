@@ -46,14 +46,11 @@
 		<!-- 
 			Trying for smaller phones. Introduce a dropdown menu
 		-->
-
-		<select>
-			<option value="" selected="selected">Select</option>
-			<option class="smoothscroll" value="home" href="#home"> Home</option>
-			<option class="smoothscroll" value="about" href="#about">Popular Packages</option>
-			<option class="smoothscroll" value="contact" href="#contact">Contact</option>
-		</select>
 		<!--
+			Source for the JS script:
+				https://css-tricks.com/convert-menu-to-dropdown/
+		
+		 -->
 		<script type="text/javascript">
 			$("<select />").appendTo("#nav-wrap")
 
@@ -69,13 +66,13 @@
 					"value" : el.attr("href"),
 					"text" : el.text()
 				}).appendTo("#nav-wrap select");
-			});
-
+			}); 
+			
 			$("#nav-wrap select").change(function(){
 				window.location = $(this).find("option:selected").val();
 			})	
 		</script>
-		-->
+		
 	</nav>
 	
 		<div class="hero-image">
