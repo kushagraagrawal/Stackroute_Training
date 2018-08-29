@@ -58,7 +58,7 @@ ul#nav li a:active { background-color: transparent !important; }
 ul#nav li a { color: #F06000; }
 
 .hero-image{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
 	height: 93%;
 	width: 100%;
 	margin: auto;
@@ -93,6 +93,7 @@ ul#nav li a { color: #F06000; }
   flex:1;
   width: 100%;
   flex-direction: row;
+
  }
  .size_change{
  	justify-content: space-around;
@@ -105,14 +106,28 @@ ul#nav li a { color: #F06000; }
   font-size: 20px;
   min-width: 200px;
 }
+#stuff{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 
 @media (max-width: 960px){
 	.flex-container{
 		flex-direction: column;
 		flex-wrap: wrap;
+		max-width: 960px;
+	}
+	.flex-container > div{
+		max-width: 80%;
 	}
 	.size_change{
-		justify-content: space-between;
+		justify-content: space-around;
+	}
+	#stuff{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 
