@@ -24,6 +24,10 @@ body, html{
    background-color: black;
 }
 
+#nav-wrap select{
+	display: none;
+}
+
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
 
@@ -143,6 +147,12 @@ ul#nav li a { color: #F06000; }
 		flex:1 100%;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+	#nav-wrap select{
+		display: inline-block;
+	}
+	#nav-wrap ul{
+		display: none;
 	}
 }
 
