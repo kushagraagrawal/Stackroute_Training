@@ -90,7 +90,7 @@ ul#nav li a { color: #F06000; }
 
   display: flex;
   background-color: black;
-  flex:1;
+  /*flex:1;*/
   width: 100%;
   flex-direction: row;
 
@@ -106,13 +106,25 @@ ul#nav li a { color: #F06000; }
   font-size: 20px;
   min-width: 200px;
 }
+.flex-container > li{
+	margin: 0;
+	flex:1 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*
 #stuff{
+	
 	width: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	
+	/*height: auto;
+	margin-bottom: 1em;
+	white-space: normal;
 }
-
+*/
 @media (max-width: 960px){
 	.flex-container{
 		flex-direction: column;
