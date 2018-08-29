@@ -104,13 +104,14 @@ ul#nav li a { color: #F06000; }
   margin: 20px;
   padding: 20px;
   font-size: 20px;
-  min-width: 200px;
+ 
 }
 .flex-container > li{
 	margin: 0;
 	flex:1 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	
 }
 /*
 #stuff{
@@ -137,8 +138,9 @@ ul#nav li a { color: #F06000; }
 	.size_change{
 		justify-content: space-around;
 	}
-	#stuff{
-		white-space: nowrap;
+	.flex-container > li{
+		margin: 0;
+		flex:1 100%;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
