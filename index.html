@@ -42,36 +42,6 @@
 			</li>
 			<li><a class="smoothscroll" href="#contact">Contact</a></li>
 		</ul> <!-- end #nav -->
-
-		<!-- 
-			Trying for smaller phones. Introduce a dropdown menu
-		-->
-		<!--
-			Source for the JS script:
-				https://css-tricks.com/convert-menu-to-dropdown/
-		
-		 -->
-		<script type="text/javascript">
-			$("<select />").appendTo("#nav-wrap")
-
-			$("<option />", {
-				"selected": "selected",
-				"value" : "",
-				"text" : "Go to..."
-			}).appendTo("#nav-wrap select");
-
-			$("#nav-wrap a").each(function(){
-				var el = $(this);
-				$("<option />", {
-					"value" : el.attr("href"),
-					"text" : el.text()
-				}).appendTo("#nav-wrap select");
-			}); 
-			
-			$("#nav-wrap select").change(function(){
-				window.location = $(this).find("option:selected").val();
-			})	
-		</script>
 		
 	</nav>
 	

@@ -148,12 +148,7 @@ ul#nav li a { color: #F06000; }
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	#nav-wrap select{
-		display: inline-block;
-	}
-	#nav-wrap ul{
-		display: none;
-	}
+	
 }
 
 footer{
