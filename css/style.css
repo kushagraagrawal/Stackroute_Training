@@ -108,7 +108,7 @@ ul#nav li a { color: #F06000; }
   margin: 20px;
   padding: 20px;
   font-size: 20px;
- 
+  min-width: 300px; 
 }
 .flex-container > li{
 	margin: 0;
@@ -116,6 +116,19 @@ ul#nav li a { color: #F06000; }
 	overflow: hidden;
 	text-overflow: ellipsis;
 	
+}
+.flex-container button{
+	background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+button:hover {
+    background-color: #F06000;
 }
 /*
 #stuff{
@@ -176,5 +189,5 @@ footer i{
 	color: white
 }
 .social-links i:hover{
-	color:red;
+	color:#F06000;
 }
