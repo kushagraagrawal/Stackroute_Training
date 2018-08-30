@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- 
 		Linking the stylesheets:
-			1) Style.css is the local css file containing the 
+			1) Style.css is the local css file containing the css elements for the laptop/wide screen design
+			2) mediaqueries.css for small screen.
+			3) font-awesome.min.css for the Font awesome icons.
+			4) GoogleAPI link for the font of the entire webpage
+			5) favicon for the icon.
 
 	-->
 	
@@ -34,7 +38,12 @@
 	<title>Assignment 1</title>
 </head>
 <body>
-	
+<!-- 
+	Navigation bar that is fixed. The mobile-btn class specifies the button for small screen.
+	Contains 3 elements namely Home, Popular Packages, Contact 
+
+
+-->
 <nav id="nav-wrap">
 		<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
@@ -46,7 +55,9 @@
 			</li>
 			<li><a class="smoothscroll" href="#contact">Contact</a></li>
 		</ul> <!-- end #nav -->
-		
+<!--
+	Div for Hero Image and text. Image has been added in the CSS stylesheet.
+-->
 	</nav>
 		<div class="hero-image">
 			<div class="hero-text">
@@ -55,6 +66,12 @@
 
 			</div>
 		</div>
+<!-- 
+	End of Hero Image
+-->
+<!-- 
+	The flexbox section containing the main of the travel webpage. Each flexbox contains the name of the package, with some details and 2 buttons (non-functioning).
+-->
 	<section id="about">
 		<h2> Popular packages</h2>
 		<div class="flex-container size_change">
@@ -119,6 +136,10 @@
 	</div>
 </div>
 </section>
+<!-- End of Flexbox-->
+<!-- 
+	Footer section wrapped in the section with id contact. Contains all the social media icons (dummy for now)
+-->
 <section id="contact">
 	<footer>
 		<h2>Follow us</h2>
