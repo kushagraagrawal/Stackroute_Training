@@ -1,0 +1,213 @@
+/* 
+	CSS stylesheet for the laptop screen.
+*/
+
+/* 
+	General parameters for the body. Namely the font, margin and height occupied by the body.
+*/
+
+body, html{
+	height: 100%;
+	font-family: 'Slabo 27px', serif;
+	margin: 0px;
+}
+/* 
+	Adding general parameters to list items in the nav bar. nav bar id is nav-wrap
+*/
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: black;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li a { color: #F06000; }
+
+/* 
+	Hero Image parameters. 93% height is chosen after trial and error and can be modified.
+*/
+
+.hero-image{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
+	height: 93%;
+	width: 100%;
+	margin: auto;
+	margin-top: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/* 
+	Text in the hero image section.
+*/
+
+.hero-text{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.hero-text h1{
+	font-size: 50px;
+}
+#about h2{
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
+/* 
+	Flex container
+*/
+
+.flex-container {
+	/*padding: 20px;
+	*/margin-top: 30px;
+
+  display: flex;
+  background-color: black;
+  flex:1;
+  width: 100%;
+  flex-direction: row;
+
+ }
+ /* 
+	Another class in flexbox to use justify-content
+*/
+
+ .size_change{
+ 	justify-content: space-around;
+ }
+/* 
+	Properties specific to div, li and buttons in the flexbox.
+*/
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+   
+}
+.flex-container > li{
+	margin: 0;
+	flex:1 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.flex-container button{
+	background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+button:hover {
+    background-color: #F06000;
+}
+/* 
+	Footer 
+*/
+
+footer{
+	margin-top: 30px;
+	padding-top: 24px;
+	/*margin-bottom: 30px;*/
+	padding-bottom: 24px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 60%;
+}
+
+footer a, footer a:visited{
+	color: #525252;
+}
+footer a:hover, footer a:focus{
+	background-color: transparent;
+	
+}
+
+footer .social-links{
+	margin: 18px 5px 30px 0;
+	padding: 0;
+	font-size: 30px;
+}
+footer h2{
+	margin: 18px 0 30px 30px;
+	padding: 0;
+	font-size: 20px;	
+}
+footer .social-links li{
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+	margin-left: 42px;
+}
+footer i{
+	font-size: 48px;
+	color: black;
+}
+/* 
+	Properties specific to the social media class
+*/
+
+.social-links i{
+	color: white
+}
+.social-links i:hover{
+	color:#F06000;
+}

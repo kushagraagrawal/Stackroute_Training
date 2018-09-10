@@ -3,71 +3,161 @@
 <html>
 <head id="thisissparta">
 	<meta charset="utf-8"/>
-	<title> Assignment 1</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="wrap">
-		<h1>My First Website</h1>
-		<p>Welcome to my website! Here are some things I enjoy.</p>
-		<div class="content">
-			<p>Look, content!</p>
-		</div>
-		<aside>
-			<ul>
-				<li>Web Development</li>
-				<li>Chess</li>
-				<li>Reading</li>
-				<li>Learning</li>
-			</ul>
-		</aside>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+		Linking the stylesheets:
+			1) Style.css is the local css file containing the css elements for the laptop/wide screen design
+			2) mediaqueries.css for small screen.
+			3) font-awesome.min.css for the Font awesome icons.
+			4) GoogleAPI link for the font of the entire webpage
+			5) favicon for the icon.
 
-		<footer>
-			This is a footer
-		</footer>
-	</div>
-</body>
-</html>
+	-->
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Script for making the scroll smoother
+
+		Source: Stack Overflow (https://stackoverflow.com/questions/35130603/slowly-scroll-to-a-specific-div-or-anchor-in-a-html-page)
+
+	--> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+				$(document).ready(function(){  
+					$(".smoothscroll").click(function(e) {
+						e.preventDefault();
+						$('html, body').animate({
+							scrollTop: $($.attr(this, 'href')).offset().top
+						}, 2000);
+					});
+				});
+	</script>
+	<title>Assignment 1</title>
+</head>
+<body>
+<!-- 
+	Navigation bar that is fixed. The mobile-btn class specifies the button for small screen.
+	Contains 3 elements namely Home, Popular Packages, Contact 
+
+
 -->
+<nav id="nav-wrap">
+		<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+		<ul id="nav" class="nav">
+			<li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+			<li><a class="smoothscroll" href="#about">Popular Packages</a>
+			
+			</li>
+			<li><a class="smoothscroll" href="#contact">Contact</a></li>
+		</ul> <!-- end #nav -->
 <!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Tutorial</title>
-</head>
-<body>
-	<h1>this is sparta</h1>
-	<form action="" method="get">
-		<ul>
-			<li>
-				<label for="name">Enter Your Name:</label>
-				<input id="name" ="" name="name"/>
-			</li>
-			<li>
-				<label for="comments">Your comments:</label>
-				<textarea id="comments" name="comments"></textarea>
-			</li>
-			<li>
-				<input type="submit" name="submit_button" value="Go"/>
-			</li>
-		</ul>
-	</form>
-</body>
-</html>
+	Div for Hero Image and text. Image has been added in the CSS stylesheet.
 -->
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Spartans</title>
-</head>
-<body>
-	<div class="something">
-		<div class="box"></div>
+	</nav>
+		<div class="hero-image">
+			<div class="hero-text" id="home">
+				<h1> Expeditious Travels </h1>
+				<p> Planning fun, affordable holidays for everyone since 2014.</p>
+
+			</div>
+		</div>
+<!-- 
+	End of Hero Image
+-->
+<!-- 
+	The flexbox section containing the main of the travel webpage. Each flexbox contains the name of the package, with some details and 2 buttons (non-functioning).
+-->
+	<section id="about">
+		<h2> Popular packages</h2>
+		<div class="flex-container size_change">
+			
+			<div> <h3>Singapore-Bali with Cruise</h3>
+				<h4>Trip Highlights</h4>
+				<ul>
+					<li>
+						Enjoy the exotic beaches at Bali
+					</li>
+					<li>
+						Experience Singapore’s Night Safari.
+					</li>
+					<li>
+						Visit Singapore’s Colonial Heart, Universal Studios and Singapore Zoo.
+					</li>
+					<li>
+						If you visit during March, you can catch the Singapore GP,the only F1 race held at night.
+					</li>
+				</ul>
+				<button class="button">Itinerary</button>
+				<button class="button">Price</button>
+
+			</div>
+			<div><h3>Ladakh</h3>
+				<h4>Trip Highlights</h4>
+				<ul>
+					<li>
+						Visit the Thicksey and Hemis Monastery
+					</li>
+					<li>
+						Drive to Nubra Valley via Khardung-La, the highest motorable road in the world.
+					</li>
+					<li>
+						Drive to the famous Pangong-Tso, the lake famous for it's pristine waters and movie shootings.
+					</li>
+					<li>
+						Explore the quaint Leh market, famous for its antiques and restaurants.
+					</li>
+				</ul>
+				<button class="button">Itinerary</button>
+				<button class="button">Price</button>
+		</div>
+		<div><h3>Darjeeling-Gangtok</h3><h4>Trip Highlights</h4>
+				<ul>
+					<li>
+						Visit Tiger Hill to eyewitness a beautiful sunrise
+					</li>
+					<li>
+						Yak ride at Tsomgo Lake and Visit Baba Mandir
+					</li>
+					<li>
+						Visit to Happy Valley Tea estate, Batasia Loop. Ghoom Monastery, Peace pagoda,and Japanese Temple
+					</li>
+					<li>
+						A memorable ride Darjeeling Himalayan Railway (Toy Train), a UNESCO World Heritage Site
+					</li>
+				</ul>
+				<button class="button">Itinerary</button> 
+				<button class="button">Price</button>
+				
 	</div>
+</div>
+</section>
+<!-- End of Flexbox-->
+<!-- 
+	Footer section wrapped in the section with id contact. Contains all the social media icons (dummy for now)
+-->
+<section id="contact">
+	<footer>
+		<h2>Follow us</h2>
+		<div class="row">
+			<div class="twelve columns">
+				<ul class="social-links">
+					<li><a href="#instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#GooglePlus"><i class="fa fa-google-plus"></i></a></li>
+
+				</ul>
+				
+			</div>
+		</div>	
+	</footer>
+	
 
 
 </body>
